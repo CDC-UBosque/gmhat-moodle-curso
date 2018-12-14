@@ -1,0 +1,35 @@
+// -----------------------
+// material modulo
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+
+	.btn{
+		background: $color_brown;
+		border: 1px solid $color_brown;
+		color: $color_white;
+	    border-radius: 0;
+	    padding: 0.3rem 1rem;
+	    text-shadow: none;
+	    font-family: 'Acherus_Grotesque',sans-serif;
+	    font-size: $font_txt;
+	    line-height: initial;
+	    transition: all ease-in-out .2s;
+	    text-decoration: none;
+	    border-radius: 13px;
+		box-shadow: none;
+		font-weight: 600;
+	    
+	    .fa{
+		    width: initial;
+		}
+	    
+	    &:hover{
+		    background: $color_white;
+			border: 1px solid $color_brown;
+			color: $color_brown;
+	    }
+	}
+	
+}

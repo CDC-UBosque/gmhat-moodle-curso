@@ -1,0 +1,53 @@
+// -----------------------
+// accordion
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.content-cc{
+		
+		.accordion{
+			
+			max-width: 810px;
+			margin: 0 auto 2rem;
+			
+			.accordion-group{
+				border: 0px;
+				border-radius: 0px;
+				margin-bottom: 0;
+				margin-top: -1px;
+				
+				.accordion-heading{
+					
+					.accordion-toggle,
+					.accordion-toggle.collapsed{
+						background: $color_dark_blue;
+						border: 1px solid $color_white;
+						color: $color_white;
+						font-weight:  700;
+						font-family: 'Acherus_Grotesque',sans-serif;
+						
+						&:hover{
+							background: $color_brown;
+							color: $color_white;
+						}
+						
+					}
+					
+				}
+				
+				.accordion-body{
+					background: $color_white;
+					border-left: 1px solid $color_brown;
+					border-right: 1px solid $color_brown;
+					border-bottom: 1px solid $color_brown;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

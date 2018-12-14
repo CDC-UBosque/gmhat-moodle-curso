@@ -1,0 +1,115 @@
+// -----------------------
+// banner home
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.container-cc{
+		
+		display: grid;
+		grid-template-columns: 25% 1fr;
+		grid-template-areas:
+			"banner banner"
+			"menumobile menumobile"
+			"menu content"
+			"contentmobile contentmobile"
+			"cards cards"
+			"footer footer";
+		grid-gap: 1rem;
+		padding: 0 2rem;
+		
+		@media (max-width: $breakpoint_1){
+			//grid-template-columns: 25% 1fr;
+			padding: 0 1rem;
+		}
+		
+		@media (max-width: $breakpoint_2){
+			grid-template-columns: 1fr 1fr;
+		}
+		
+		.banner-cc{
+			grid-area: banner;
+			margin: 0 -2rem;
+		}
+		
+		.menu-left{
+			grid-area: menu;
+			justify-self: center;
+			padding-top: 2rem;
+			
+			@media (max-width: $breakpoint_1){
+			  justify-self: initial;
+			}
+			
+			@media (max-width: $breakpoint_2){
+				grid-area: menumobile;
+			}
+			
+		}
+		
+		.content-cc{
+			grid-area: content;
+			padding-left: 2rem;
+			padding-top: 2rem;
+			
+			@media (max-width: $breakpoint_1){
+				padding-left: 1rem;
+			}
+			
+			@media (max-width: $breakpoint_2){
+				grid-area: contentmobile;
+				padding-left: 0;
+			}
+		}
+		
+		.card-cc{
+			grid-area: cards;
+			padding: 2rem;
+			background: $color_light_blue;
+			
+			position: relative;
+			
+			&::before,
+			&::after {
+			    content: "";
+			    background: $color_light_blue;
+			    display: block;
+			    width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    top: 0;
+			    left: 100%;
+			}
+			&::after {
+			    left: auto;
+			    right: 100%;
+			}
+		}
+		
+		.footer-cc{
+			grid-area: footer;
+			padding: 1rem;
+			background: $color_dark_blue;
+			position: relative;
+			
+			&::before,
+			&::after {
+			    content: "";
+			    background: $color_dark_blue;
+			    display: block;
+			    width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    top: 0;
+			    left: 100%;
+			}
+			&::after {
+			    left: auto;
+			    right: 100%;
+			}
+		}
+		
+	}
+	
+}

@@ -1,0 +1,83 @@
+// -----------------------
+// lightbox
+// -----------------------
+
+.curso-cc,
+#region-main .curso-cc{
+	
+	.banner-video{
+		
+	    margin-bottom: 3rem;
+	    margin-top: 2rem;
+	    display: block;
+	    max-width: 800px;
+	    box-shadow: 0px 0px 35px rgba(0,0,0,0.5);
+	    border-radius: 2rem;
+	    overflow: hidden;
+		
+		#video{
+			margin-top: 0;
+			margin-bottom: 0;
+			
+			img{
+				width: 100%;
+				height: auto;
+			}
+			
+			a{
+				display: inline-block;
+				position: relative;
+				transition: all .2s ease-in-out;
+				
+				&:before{
+					display: inline-block;
+				    content: "";
+				    position: absolute;
+				    left: 45%;
+				    z-index: 1;
+				    background: url(../images/svg/plus2.svg);
+				    width: 4rem;
+				    height: 4rem;
+				    background-size: cover;
+				    top: 45%;
+				}
+				
+				&:hover{
+					&:before{
+						background: url(../images/svg/plus.svg);
+						width: 4rem;
+					    height: 4rem;
+					    background-size: cover;
+					    top: 45%;
+					}
+				}
+				
+			}
+			
+			figcaption{
+				padding: 0.5rem 2rem;
+				font-size: $font_caption;
+				font-style: italic;
+			}
+			
+		}
+		
+		span{
+			
+			&:last-child{
+				min-height: 0px;
+			}
+			
+		}
+		
+		.img-footer{
+			//color: $color_orange;
+			//font-family: $font_hel_light_cond;
+			padding-left: 1rem;
+			font-size: 0.9em;
+			letter-spacing: 0.5px;
+		}
+		
+	}
+	
+}

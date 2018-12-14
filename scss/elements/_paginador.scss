@@ -1,0 +1,45 @@
+// -----------------------
+// material modulo
+// -----------------------
+
+.curso-cc,
+#region-main .box.generalbox .curso-cc{
+	
+	.pager{
+		max-width: 710px;
+		margin: 1rem auto;
+		padding: 0;
+		
+		li{
+			
+			margin: 0 .5rem;
+			
+			a{
+				font-family: 'Acherus_Grotesque',sans-serif;
+				font-weight: 700;
+				color: $color_dark_blue;
+				border-radius: 13px;
+				background: $color_white;
+				text-decoration: none;
+				transition: all .1s ease-in-out;
+				border: 1px solid $color_dark_blue;
+				
+				&:hover{
+					background: $color_dark_blue;
+					text-decoration: underline;
+					border: 1px solid $color_white;
+					color: $color_white;
+				}
+			}
+			
+			.disable,
+			.disabled{
+				cursor: default;
+				opacity: .5;
+			}
+			
+		}
+		
+	}
+	
+}

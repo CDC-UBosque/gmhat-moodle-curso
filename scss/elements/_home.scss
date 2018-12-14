@@ -1,0 +1,76 @@
+// -----------------------
+// Home structure
+// -----------------------
+
+#region-main{
+	
+	.course-content{
+		
+		.topics{
+			
+			background: $color_bg_grey;
+			display: grid;
+		    grid-template-columns: 1fr 1fr 1fr;
+		    grid-gap: 1rem;
+			padding: 0 2rem;
+			
+			/*@supports not (display: grid) {
+				body:before {
+					content: 'Sorry, seems like your browser doesn\'t support display: grid. Below is the flexbox fallback.';
+					display: block;
+					padding: 2rem 2rem 0;
+					color: #ffffff;
+					text-align: center;
+				}
+			}*/
+			
+			@media (max-width: $breakpoint_1){
+				grid-template-columns: 1fr 1fr;
+			}
+			
+			@media (max-width: $breakpoint_2){
+				grid-template-columns: 1fr;
+			}
+		    
+		    #section-0{
+			    grid-column-start: 1;
+			    grid-column-end: -1;
+				margin: 0 -2rem;
+				
+				@media (max-width: $breakpoint_1){
+					grid-template-columns: 25% 1fr;
+					margin: 0 -1rem;
+				}
+		    }
+		    
+		    li:nth-child(n+2){
+				//background: red;
+				justify-self: center;
+				
+				.side{
+				    padding: 0;
+				    margin: 0;
+					width: 0;
+			    }
+			    
+			    .content{
+				    margin: 0;
+				    
+				    .summary{
+					    margin: 0;
+					    
+					    .no-overflow{
+						    overflow: visible;
+					    }
+					    
+				    }
+				    
+			    }
+			    
+			}
+			
+		}
+		
+	}
+	
+}
